@@ -1,0 +1,6 @@
+{
+  "name": "Utsav - Indian Celebration & Event Planner",
+  "description": "Plan dream Indian weddings, birthdays, pujas, and community festivals with AI-powered budget allocation in INR, reverse timelines, vendor checklists, and personalized cultural traditions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

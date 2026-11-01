@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF6EF;
+    color: #261612;
+  }
+}
+
+.font-serif-indian {
+  font-family: 'Rozha One', serif;
+}
+
+.font-festive {
+  font-family: 'Yatra One', cursive, sans-serif;
+}
+
+/* Subtle Indian festive background pattern */
+.bg-festive-pattern {
+  background-color: #FAF6EF;
+  background-image: radial-gradient(#F37021 0.75px, transparent 0.75px), radial-gradient(#FFB800 0.75px, #FAF6EF 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.15;
+}
+
+/* Print view optimizations */
+@media print {
+  header, form, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-page {
+    page-break-after: always;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b07d4b;
+}
